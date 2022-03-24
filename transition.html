@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Transition</title>
+    <style >
+        .absolute
+        {
+            border-style: dashed;
+            height: 150px;
+            width:150px;
+            position:absolute;
+            left:150px;
+            top:100px;
+            background-color: rgb(85, 183, 212);
+            transition: height 3s linear;
+        }
+        .relative
+        {
+           
+            height: 150px;
+            width:250px;
+            position:absolute;
+            left:250px;
+            top:200px;
+           
+           
+            transition: width 2s linear;
+        }
+        .absolute:hover
+        {
+            border-style: double;
+            background-color: rgb(224, 85, 178);
+            width:300px;
+           height: 150px;
+            
+        }
+        
+        img
+        {
+            transition: width 1s,height 1s,transform 2s;
+
+        }
+        img:hover
+        {
+            width:200px;
+            height:200px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<div>
+<body background="a.gif" style="background-repeat:no-repeat;background-size: 300% 300%">
+    <img src="tomjerry2.gif" height="125px" width="125px">
+    <hr>
+    <br>
+    <br>
+</div>
+    <div class="absolute">CARTOON NETWORK</div>
+    <div class="relative">
+        <p class="absolute">TOM and JERRY</p>
+    </div>
+</body>  
+</body>
+</html>
